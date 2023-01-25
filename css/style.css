@@ -1,7 +1,16 @@
         /* start global variables */
         
          :root {
-            --main-color: #ffffff;
+            --main-color: #545e64;
+            --secondary-color: #fbfcfd;
+            --section-padding: 60px;
+            --section-color: #d0dee7;
+            --section-secondary-color: #6b2673;
+            --section-third-color: #fbfcfd;
+            --text-main-color: #ffffff;
+            --text-secondary-color: #532770;
+            --text-third-color: #dfd8d0;
+            /*--main-color: #ffffff;
             --secondary-color: #2c4755;
             --section-padding: 60px;
             --section-color: #532770;
@@ -9,7 +18,7 @@
             --section-third-color: #5e327c;
             --text-main-color: #ffffff;
             --text-secondary-color: #532770;
-            --text-third-color: #d94599;
+            --text-third-color: #d94599;*/
         }
         /* end  global variables */
         /* start global rules */
@@ -31,7 +40,7 @@
         }
         
         .parent {
-            background-color: var(--main-color);
+            background-color: var(--section-third-color);
             color: var(--main-color);
         }
         
