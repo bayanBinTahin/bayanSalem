@@ -22,10 +22,12 @@
         
         html {
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
         
         body {
             font-family: "Work Sans", "sans-serif";
+            overflow-x: hidden;
         }
         
         .parent {
@@ -78,8 +80,6 @@
         .header .container .logo img {
             width: 70px;
         }
-        
-        .header .container .tabs {}
         
         .header .container .tabs ui {
             list-style: none;
@@ -153,15 +153,6 @@
             width: 70px;
         }
         
-        @media (max-width: 930px) {
-            .aboutMe .container .first-section .image {
-                display: none;
-            }
-            .aboutMe .container .first-section .about-text {
-                width: 100%;
-            }
-        }
-        
         .aboutMe .container .first-section .about-text {
             display: flex;
             flex-direction: column;
@@ -174,6 +165,18 @@
         .aboutMe .container .first-section .about-text .about-info {
             display: flex;
             justify-content: space-around;
+        }
+        
+        @media (max-width: 930px) {
+            .aboutMe .container .first-section .image {
+                display: none;
+            }
+            .aboutMe .container .first-section .about-text {
+                width: 100%;
+            }
+            .aboutMe .container .first-section .about-text .about-info {
+                flex-direction: column;
+            }
         }
         
         .aboutMe .container .first-section .about-text .button-groub {
