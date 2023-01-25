@@ -5,11 +5,11 @@
             --secondary-color: #fbfcfd;
             --section-padding: 60px;
             --section-color: #d0dee7;
-            --section-secondary-color: #6b2673;
-            --section-third-color: #fbfcfd;
+            --section-secondary-color: #dfd8d0;
+            --section-third-color: #ffffff;
             --text-main-color: #ffffff;
-            --text-secondary-color: #532770;
-            --text-third-color: #dfd8d0;
+            --text-secondary-color: #2d428a;
+            --text-third-color: #545e64;
             /*--main-color: #ffffff;
             --secondary-color: #2c4755;
             --section-padding: 60px;
@@ -18,7 +18,7 @@
             --section-third-color: #5e327c;
             --text-main-color: #ffffff;
             --text-secondary-color: #532770;
-            --text-third-color: #d94599;*/
+            --text-secondary-color: #d94599;*/
         }
         /* end  global variables */
         /* start global rules */
@@ -77,7 +77,7 @@
         .header {
             padding: 12px;
             height: 50px;
-            background-color: var(--section-color);
+            background-color: var(--section-secondary-color);
         }
         
         .header .container {
@@ -87,7 +87,9 @@
         }
         
         .header .container .logo img {
-            width: 70px;
+            width: 94px;
+            top: -23px;
+            position: absolute;
         }
         
         .header .container .tabs ui {
@@ -103,7 +105,7 @@
         }
         
         .header .container .tabs ui li:hover {
-            color: var(--text-third-color);
+            color: var(--text-secondary-color);
         }
         /*header end*/
         /*landing start*/
@@ -129,7 +131,7 @@
         }
         
         .landing .intro-text p {
-            color: var(--text-third-color);
+            color: var(--text-secondary-color);
         }
         /*landing end*/
         /*about start*/
@@ -159,7 +161,11 @@
         
         .aboutMe .container .first-section .image {
             display: inline-block;
-            width: 70px;
+            width: 270px;
+        }
+        
+        .aboutMe .container .first-section .image img {
+            width: 270px;
         }
         
         .aboutMe .container .first-section .about-text {
@@ -168,7 +174,7 @@
         }
         
         .aboutMe .container .first-section span {
-            color: var(--text-third-color);
+            color: var(--text-secondary-color);
         }
         
         .aboutMe .container .first-section .about-text .about-info {
@@ -195,15 +201,15 @@
         }
         
         .aboutMe .container .first-section .about-text .button-groub button:first-child {
-            background-color: var(--text-third-color);
-            border-color: var(--text-third-color);
+            background-color: var(--text-secondary-color);
+            border-color: var(--text-secondary-color);
             color: var(--text-main-color);
         }
         
         .aboutMe .container .first-section .about-text .button-groub button:last-child {
             background-color: transparent;
-            border-color: var(--text-third-color);
-            color: var(--text-third-color);
+            border-color: var(--text-secondary-color);
+            color: var(--text-secondary-color);
         }
         
         .aboutMe .container .second-section {
@@ -217,7 +223,7 @@
         }
         
         .aboutMe .container .second-section h3 span {
-            color: var(--text-third-color);
+            color: var(--text-secondary-color);
         }
         
         .aboutMe .container .second-section .list {
@@ -232,8 +238,9 @@
             padding-top: 28px;
             padding-bottom: 28px;
             border-radius: 50%;
-            background-color: var(--text-third-color);
-            border-color: var(--text-third-color);
+            background-color: var(--text-secondary-color);
+            border-color: var(--text-secondary-color);
+            color: var(--text-main-color);
             animation: jumpySpan 3s ease-in 0s infinite normal backwards;
             margin-bottom: 20px;
         }
@@ -309,7 +316,11 @@
         .projects .container .projects-list .project .img {
             background-color: var(--section-color);
             padding: 7px 3px;
-            align-items: center;
+        }
+        
+        .projects .container .projects-list .project .img img {
+            width: 226px;
+            height: 150px;
         }
         
         .projects .container .projects-list .project .project-info h4 {
@@ -317,7 +328,7 @@
         }
         
         .projects .container .projects-list .project .project-info p {
-            color: var(--text-third-color);
+            color: var(--text-secondary-color);
         }
         
         .projects .container .projects-list .project .project-info p:hover {
@@ -337,7 +348,7 @@
         }
         
         .contact .container h4 {
-            color: var(--text-third-color);
+            color: var(--text-secondary-color);
         }
         
         .contact .container span {
@@ -347,10 +358,10 @@
         
         .contact .container span a {
             text-decoration: none;
-            color: #9764bb;
+            color: var(--text-secondary-color);
         }
         
         .contact .container a:hover {
-            color: var(--section-secondary-color);
+            color: var();
         }
         /* contact end*/
