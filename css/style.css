@@ -176,6 +176,7 @@
             }
             .aboutMe .container .first-section .about-text .about-info {
                 flex-direction: column;
+                text-decoration: none;
             }
         }
         
