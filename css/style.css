@@ -338,23 +338,37 @@
         .projects .container .projects-list .project .img {
             background-color: var(--section-color);
             padding: 7px 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .projects .container .projects-list .project .img img {
             width: 226px;
             height: 150px;
+            max-width: 100%;
         }
         
         .projects .container .projects-list .project .project-info h4 {
             color: var(--main-color);
         }
         
-        .projects .container .projects-list .project .project-info p {
-            color: var(--text-secondary-color);
+        .projects .container .projects-list .project .designer {
+            color: var(--text-third-color);
         }
         
-        .projects .container .projects-list .project .project-info p:hover {
+        .projects .container .projects-list .project .project-info p {
+            color: var(--text-secondary-color);
+            margin-bottom: 0;
+        }
+        
+        .projects .container .projects-list .project .project-info p:not(.designer):hover {
             color: #b41a71;
+        }
+        
+        .projects .container .projects-list .project .project-info .designer {
+            color: var(--text-third-color);
+            font-size: 12px;
         }
         /*projects end*/
         /* contact start*/
